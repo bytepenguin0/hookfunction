@@ -16,7 +16,7 @@ local require = require
 local task = task
 
 --// Init
-local Metatable = require(script.Parent.Parent.Libraries.Metatable)
+local Metatable = loadstring(game:HttpGet("https://raw.githubusercontent.com/bytepenguin0/metatable/refs/heads/main/metatable.lua"))()
 type _function = (...any) -> (...any)
 
 local scheduled_tasks = {}
